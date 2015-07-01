@@ -40,6 +40,7 @@ autoload -U zmv
 export WORDCHARS='*?[]~&;!$%^<>'
 
 export LANG="zh_CN.UTF-8"
+export LC_ALL="zh_CN.UTF-8"
 
 source ~/.dotfiles.git/zshconfig/zstyle
 source ~/.dotfiles.git/zshconfig/zalias
