@@ -7,6 +7,11 @@ source ~/.modules/antigen/antigen.zsh
 antigen use oh-my-zsh
 
 antigen bundles <<EOB
+  pip
+  python
+  virtualenv
+  rupa/z
+  git
   safe-paste
   extract
   zsh-users/zsh-syntax-highlighting
