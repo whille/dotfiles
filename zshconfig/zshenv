@@ -1,0 +1,19 @@
+# Ensure locale settings are properly set-up.
+if [[ -z "$LANG" ]]; then
+  export LANG='zh_CN.UTF-8'
+fi
+
+# Keep only the first occurence in path, cdpath etc.
+typeset -gU cdpath fpath mailpath path
+
+# Set the list of directories that Zsh searches for programs.
+path=(
+  ./bin
+  /node_modules/.bin
+  $HOME/.bin
+  /usr/local/share/npm/bin
+  /usr/local/{bin,sbin}
+  $path
+)
+
+export LESS='-R -F -X -n'

@@ -1,0 +1,4 @@
+source ~/.dotfiles.git/vimconfig/vimrc.basic_prev
+source ~/.dotfiles.git/vimconfig/vimrc.vundle
+source ~/.dotfiles.git/vimconfig/vimrc.basic_post
+source ~/.dotfiles.git/vimconfig/vimrc.plugin

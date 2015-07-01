@@ -1,0 +1,38 @@
+fancy-ctrl-z () {
+  if [[ $#BUFFER -eq 0 ]]; then
+    BUFFER="fg"
+    zle accept-line
+  else
+    zle push-input
+    zle clear-screen
+  fi
+}
+zle -N fancy-ctrl-z
+bindkey '^Z' fancy-ctrl-z
+
+function viminstall {
+if [[ "$1" != "" ]] {
+    echo "installed vim plugin $1"
+    echo "Bundle \"$1\"" >> ~/.vimrc.vundle
+}
+vim +BundleInstall +qall
+}
+
+work_log() {
+  for i in *; do [ -d "$i/.git" ] && (cd $i; git log --date=short --pretty=format:"%ad $i %s" --author="$(git config --get user.email)") 2> /dev/null; done | sort | tac
+}
+
+function switchlang {
+    case $1 in
+        en)
+            echo "switch to en_US.UTF8"
+            export LC_ALL='en_US.UTF8'
+            source ~/.zshrc
+            ;;
+        zh)
+            echo "switch to zh_CN.UTF8"
+            export LC_ALL="zh_CN.UTF8"
+            source ~/.zshrc
+            ;;
+    esac
+}

@@ -1,0 +1,14 @@
+export PYTHONPATH=/opt/google-appengine-python/lib/:/opt/google-appengine-python/:/usr/local/lib/python2.7/site-package:$PYTHONPATH
+export NODE_PATH=/usr/lib/node_modules
+export ECLOUD_PY_HOME=/home/nathon/Work/ecloud_server/
+export ECLOUD_PYTHON_HOME=/home/nathon/.virtualenvs/ecloud/bin/python2.7
+export ECLOUD_ENV='local'
+
+function getfile () {
+    curl http://localhost:8083/xfile/agent/file/download\?token\=${1}\&xid\=${2}
+}
+
+function postfile () {
+    curl --form "file=@${1}" --form "token=${2}" --form "xid=${3}"  http://localhost/xfile/agent/file/upload ${4}
+}
+
