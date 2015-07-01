@@ -13,7 +13,7 @@ bindkey '^Z' fancy-ctrl-z
 function viminstall {
 if [[ "$1" != "" ]] {
     echo "installed vim plugin $1"
-    echo "Bundle \"$1\"" >> ~/.vimrc.vundle
+    echo "Bundle \"$1\"" >> ~/.dotfiles.git/vimconfig/vimrc.plugin
 }
 vim +BundleInstall +qall
 }
