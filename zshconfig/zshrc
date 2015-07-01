@@ -12,6 +12,7 @@ antigen bundles <<EOB
   virtualenv
   rupa/z
   git
+  robertzk/send.zsh
   safe-paste
   extract
   zsh-users/zsh-syntax-highlighting

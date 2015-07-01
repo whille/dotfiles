@@ -36,3 +36,11 @@ function switchlang {
             ;;
     esac
 }
+
+function addalias {
+    if [[ -z $1 ]]; then
+        echo "Usage: addalias name=value"
+    else
+        echo "alias $1" >> ~/.dotfiles.git/zshconfig/zalias
+    fi
+}
