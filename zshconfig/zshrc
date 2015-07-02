@@ -41,6 +41,9 @@ export WORDCHARS='*?[]~&;!$%^<>'
 
 export LANG="zh_CN.UTF-8"
 export LC_ALL="zh_CN.UTF-8"
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
 
 source ~/.dotfiles.git/zshconfig/zstyle
 source ~/.dotfiles.git/zshconfig/zalias
