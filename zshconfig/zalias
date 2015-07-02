@@ -22,6 +22,7 @@ alias findjs='find . \( -path "node_modules" -o -path "static" \) -prune -o -nam
 alias findjson="find . -name '*.json'|xargs grep "
 alias findcss="find . -name '*.css'|xargs grep "
 alias rmpyc="find . -name '*.pyc'|xargs rm -rf"
+alias rmsvn="find . -type d -name'*.svn'|xargs rm -rf"
 
 alias cpmykey="ssh-copy-id -i ~/.ssh/private/wangnan_common.pub "
 
