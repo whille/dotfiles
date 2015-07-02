@@ -5,11 +5,12 @@ fi
 source ~/.modules/antigen/antigen.zsh
 
 antigen use oh-my-zsh
+antigen theme robbyrussell/oh-my-zsh themes/candy
 
 antigen bundles <<EOB
   pip
   python
-  virtualenv
+  virtualenvwrapper
   rupa/z
   git
   robertzk/send.zsh
@@ -19,8 +20,6 @@ antigen bundles <<EOB
   zsh-users/zaw
   zsh-users/zsh-completions
 EOB
-
-antigen theme robbyrussell/oh-my-zsh themes/candy
 
 antigen apply
 
@@ -43,6 +42,7 @@ export LANG="zh_CN.UTF-8"
 export LC_ALL="zh_CN.UTF-8"
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
 eval "$(pyenv init -)"
 
 source ~/.dotfiles.git/zshconfig/zstyle
