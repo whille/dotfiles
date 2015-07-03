@@ -10,7 +10,7 @@ antigen theme robbyrussell/oh-my-zsh themes/candy
 antigen bundles <<EOB
   pip
   python
-  virtualenvwrapper
+  virtualenv
   rupa/z
   git
   robertzk/send.zsh
@@ -44,6 +44,7 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
 eval "$(pyenv init -)"
+source /usr/bin/virtualenvwrapper.sh
 
 source ~/.dotfiles.git/zshconfig/zstyle
 source ~/.dotfiles.git/zshconfig/zalias
