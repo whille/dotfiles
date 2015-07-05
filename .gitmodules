@@ -1,0 +1,9 @@
+[submodule "fonts"]
+	path = fonts
+	url = https://github.com/powerline/fonts.git
+[submodule "fontpatcher"]
+	path = fontpatcher
+	url = https://github.com/powerline/fontpatcher.git
+[submodule "dircolors-solarized"]
+	path = dircolors-solarized
+	url = https://github.com/seebi/dircolors-solarized.git

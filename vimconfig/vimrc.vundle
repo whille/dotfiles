@@ -62,8 +62,8 @@ endif
 "powerline
 """"""""""""""""""""""""""""""""""""
 " set encoding=utf-8
-"let g:airline_theme = "bubblegum"
-"let g:Powerline_symbols = 'unicode'
+" let g:airline_theme = "bubblegum"
+" let g:Powerline_symbols = 'unicode'
 let g:Powerline_symbols = 'fancy'
 
 """"""""""""""""""""""""""""""""""""

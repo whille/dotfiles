@@ -131,15 +131,12 @@ cmap w!! w !sudo tee % > /dev/null
 """"""""""""""""""""""""""""""""""""
 "colorscheme
 """"""""""""""""""""""""""""""""""""
-try
-    colorscheme solarized
-    let g:solarized_termcolors=256
-    let g:solarized_termtrans=1
-    let g:solarized_contrast="high"
-    let g:solarized_visibility="high"
-catch /^Vim\%((\a\+)\)\=:E185/
-    colorscheme desert
-endtry
+
+colorscheme solarized
+let g:solarized_termcolors=256
+let g:solarized_termtrans=1
+let g:solarized_contrast="high"
+let g:solarized_visibility="high"
 
 """"""""""""""""""""""""""""""""""""
 "misc
