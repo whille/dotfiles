@@ -14,6 +14,7 @@ br = branch -vv
 co = checkout
 lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 cp = cherry-pick
+
 [color]
 ui = true
 
@@ -51,7 +52,9 @@ all = true
 
 [git-up "rebase"]
 arguments = --preserve-merges
+
 [merge]
 tool = vimdiff
+
 [mergetool]
 prompt = false
