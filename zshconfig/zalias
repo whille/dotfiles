@@ -12,6 +12,7 @@ alias svnrevert="svn revert . --depth infinity"
 alias sl="ls"
 alias lls="ls"
 alias gi="git"
+alias gpush="git push origin"
 alias cddot="cd ~/.dotfiles.git"
 
 alias findhtml="find . -name '*.html'|xargs grep "

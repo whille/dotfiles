@@ -50,5 +50,7 @@ else
 fi
 
 echo 'Installing git config....'
-ln -s ${HOME}/gitconfig ${DOTFILES_HOME}/gitconfig
+ln -s ${DOTFILES_HOME}/gitconfig ${HOME}/.gitconfig
 
+echo 'Installing input config....'
+ln -s ${DOTFILES_HOME}/inputrc ${HOME}/.inputrc

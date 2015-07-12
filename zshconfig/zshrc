@@ -46,7 +46,8 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
 export TERM="xterm-256color"
 # eval "$(pyenv init -)"
-source /usr/local/bin/virtualenvwrapper.sh
+source /usr/local/bin/virtualenvwrapper.sh 2> /dev/null
+source /usr/bin/virtualenvwrapper.sh 2> /dev/null
 eval `dircolors ~/.dircolors`
 
 source ~/.dotfiles.git/zshconfig/zstyle

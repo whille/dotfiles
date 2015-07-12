@@ -3,7 +3,8 @@ $if mode=vi
 Control-a: beginning-of-line
 Control-e: end-of-line
 Control-l: clear-screen
-Control-b: "backward-word backward-char"
+Control-h: backward-char
+Control-b: backward-word
 Control-f: forward-word
 Control-k: kill-line
 Control-p: previous-history
@@ -14,7 +15,8 @@ set keymap vi-command
 Control-a: beginning-of-line
 Control-e: end-of-line
 Control-l: clear-screen
-Control-b: "backward-word backward-char"
+Control-h: backward-char
+Control-b: backward-word
 Control-f: forward-word
 Control-k: kill-line
 Control-p: previous-history
