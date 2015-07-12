@@ -49,7 +49,7 @@ alias branch='git branch'
 alias rebase='git rebase'
 alias amend='git commit -C HEAD --amend'
 alias conn-fw='cd ~/.vpn/vpn_freeworld && sudo openvpn JP-04.ovpn'
-alias conn-ks='cd ~/.vpn/vpn_kingsoft/config/ && openvpn lugu.ovpn'
+alias conn-ks='cd ~/.vpn/vpn_kingsoft/config/ && sudo openvpn lugu.ovpn'
 
 alias ..='cd ../'
 alias ...='cd ../../'
