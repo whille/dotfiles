@@ -152,3 +152,5 @@ set listchars=tab:▸\ ,eol:¬
 
 noremap X 4x
 set list
+
+:iab <expr> dts strftime("%Y-%m-%d %H:%M:%S")
