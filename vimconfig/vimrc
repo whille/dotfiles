@@ -1,4 +1,5 @@
-source ~/.dotfiles.git/vimconfig/vimrc.basic_prev
-source ~/.dotfiles.git/vimconfig/vimrc.vundle
-source ~/.dotfiles.git/vimconfig/vimrc.basic_post
-source ~/.dotfiles.git/vimconfig/vimrc.plugin
+set nocompatible
+
+source ~/.vim/vundle.vim
+source ~/.vim/config.vim
+source ~/.vim/pluginconf.vim

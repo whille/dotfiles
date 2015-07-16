@@ -1,9 +1,5 @@
-set nocompatible
-
-syntax on
-filetype on
-filetype indent on
-filetype plugin on
+filetype plugin indent on
+syntax enable
 
 """"""""""""""""""""""""""""""""""""
 "basic settings
@@ -26,34 +22,27 @@ set showmode
 set showmatch
 set smartindent
 set autoindent
-set tabstop=4 "tab等同空格数
-set shiftwidth=4 "缩进空格数
+set tabstop=4
+set shiftwidth=4
 set softtabstop=4 "退格空格数
 set expandtab
 set smarttab
 set shiftround
 
 "set nowrapscan
-"set cursorcolumn
-"set cursorline
-"
 set helplang=cn
 set ffs=unix,dos,mac
-set pastetoggle=<F12>
 setlocal omnifunc=syntaxcomplete#Complete
 set completeopt=longest,menu "set autocomplete menu
 set wildmenu
 set wildignore=*.o,*~,*.pyc,*.class
 set modeline
-set t_Co=256
-set background=dark
-set term=xterm-256color
 set laststatus=2
 set history=1000
 set undolevels=1000
-set relativenumber
+set nornu
+set cursorline
 set nofoldenable
-"set foldenable
 "set foldmethod=manual
 set spell spelllang=en_gb
 
@@ -84,7 +73,9 @@ endif
 """"""""""""""""""""""""""""""""""""
 "baisc keymap
 """"""""""""""""""""""""""""""""""""
-let mapleader = "\<Space>"
+let mapleader=","
+
+set pastetoggle=<F12>
 
 nnoremap ; :
 inoremap <C-e> <ESC>A
@@ -128,15 +119,16 @@ vnoremap <C-a> :call Incr()<CR>
 
 cmap w!! w !sudo tee % > /dev/null
 
-""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""
 "colorscheme
-""""""""""""""""""""""""""""""""""""
-
-colorscheme solarized
+""""""""""""""""""""""""
 let g:solarized_termcolors=256
 let g:solarized_termtrans=1
 let g:solarized_contrast="high"
 let g:solarized_visibility="high"
+
+set background=dark
+colorscheme solarized
 
 """"""""""""""""""""""""""""""""""""
 "misc
@@ -151,6 +143,6 @@ nmap <leader>l :set list!<CR>
 set listchars=tab:▸\ ,eol:¬
 
 noremap X 4x
-set list
+"| set list |
 
 :iab <expr> dts strftime("%Y-%m-%d %H:%M:%S")

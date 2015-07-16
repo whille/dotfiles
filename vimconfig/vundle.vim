@@ -1,37 +1,40 @@
+filetype off    " Required by vundle
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
 Bundle 'gmarik/vundle'
 Bundle 'sjl/gundo.vim'
 Bundle 'ntpeters/vim-better-whitespace'
 Bundle 'gregsexton/MatchTag'
-Bundle 'myusuf3/numbers.vim'
-Bundle 'nono/jquery.vim'
 Bundle 'jpalardy/vim-slime'
-"Bundle 'godlygeek/tabular'
-"Bundle 'majutsushi/tagbar'
+Bundle 'majutsushi/tagbar'
 Bundle 'vim-scripts/genutils'
-Bundle 'vim-scripts/fcitx.vim'
 " Bundle 'davidhalter/jedi-vim'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'voithos/vim-multiselect'
 Bundle 'marijnh/tern_for_vim'
-Bundle 'vim-scripts/django.vim'
-Bundle 'lukaszb/vim-web-indent'
 Bundle 'docunext/closetag.vim'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'elzr/vim-json'
 Bundle 'Yggdroot/indentLine'
+"web front
+Bundle 'lukaszb/vim-web-indent'
 Bundle 'mattn/emmet-vim'
 Bundle 'lepture/vim-javascript'
+Bundle "othree/javascript-libraries-syntax.vim"
+Bundle 'nono/jquery.vim'
+Bundle "kchmck/vim-coffee-script"
+
 Bundle 'Shougo/vimproc'
 Bundle 'tpope/vim-fugitive'
+Bundle "vim-scripts/gitignore"
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-commentary'
 Bundle 'tpope/vim-repeat'
 Bundle 'tmhedberg/matchit'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'altercation/vim-colors-solarized'
-"Bundle 'bling/vim-airline'
-Bundle 'Lokaltog/vim-powerline'
-Bundle 'bling/vim-bufferline'
+Bundle 'bling/vim-airline'
 Bundle 'kien/ctrlp.vim'
 Bundle 'kien/rainbow_parentheses.vim'
 "Bundle 'SirVer/ultisnips'
@@ -45,20 +48,17 @@ Bundle 'Raimondi/delimitMate'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'fholgado/minibufexpl.vim'
 Bundle 'vim-scripts/Pydiction'
-Bundle 'mihaifm/bufstop'
 Bundle 'rking/ag.vim'
 Bundle 'dyng/ctrlsf.vim'
 Bundle 'gcmt/wildfire.vim'
 Bundle "tpope/vim-abolish"
-Bundle "othree/javascript-libraries-syntax.vim"
 Bundle "moll/vim-node"
 Bundle "reedes/vim-lexical"
 Bundle "tpope/vim-markdown"
 Bundle "vim-pandoc/vim-pandoc"
 Bundle "vim-pandoc/vim-pandoc-syntax"
 Bundle "dhruvasagar/vim-table-mode"
-Bundle "kchmck/vim-coffee-script"
 Bundle "tpope/vim-rsi"
-Bundle "vim-scripts/gitignore"
 Bundle "vim-easy-align"
 Bundle "chrisbra/vim-diff-enhanced"
+

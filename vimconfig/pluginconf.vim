@@ -11,10 +11,6 @@
 """"""""""""""""""""""""""""""""""""
 "basic plugin settings
 """"""""""""""""""""""""""""""""""""
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#rc()
-filetype plugin indent on
 
 """"""""""""""""""""""""""""""""""""
 "NERDTree
@@ -34,7 +30,7 @@ map <F3> <ESC>:ConqueTermSplit zsh<CR>
 """"""""""""""""""""""""""""""""""""
 "tags
 """"""""""""""""""""""""""""""""""""
-set tags=./tags,~/Work/portal/trunk/tags
+set tags=./tags,~/commontags
 
 nnoremap <silent> <F4> :TagbarToggle<CR><CR>
 
@@ -59,12 +55,9 @@ endif
 
 
 """"""""""""""""""""""""""""""""""""
-"powerline
+"airline
 """"""""""""""""""""""""""""""""""""
-" set encoding=utf-8
-" let g:airline_theme = "bubblegum"
-" let g:Powerline_symbols = 'unicode'
-let g:Powerline_symbols = 'fancy'
+let g:airline_powerline_fonts = 1
 
 """"""""""""""""""""""""""""""""""""
 "rainbow_parentheses
@@ -136,20 +129,13 @@ let g:ctrlp_custom_ignore = {
 let g:ctrlp_working_path_mode = 'ra'
 
 """"""""""""""""""""""""""""""""""""
-"buffer stop
-""""""""""""""""""""""""""""""""""""
-map <leader>bb :Bufstop<CR>
-map <leader>bf :BufstopModeFast<CR>
-let g:BufstopAutoSpeedToggle = 1
-
-""""""""""""""""""""""""""""""""""""
 "YouCompleteMe
 """"""""""""""""""""""""""""""""""""
-let g:ycm_global_ycm_extra_conf = "~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py"
-let g:ycm_key_invoke_completion = "<C-Space>"
-let g:ycm_complete_in_comments = 1
-let g:ycm_complete_in_strings = 1
-let g:ycm_collect_identifiers_from_comments_and_strings = 1
+let g:ycm_global_ycm_extra_conf = "~/.ycm_extra_conf.py"
+let g:ycm_key_invoke_completion = "<S-Space>"
+"let g:ycm_complete_in_comments = 1
+"let g:ycm_complete_in_strings = 1
+"let g:ycm_collect_identifiers_from_comments_and_strings = 1
 let g:ycm_min_num_of_chars_for_completion = 2
 let g:ycm_show_diagnostics_ui = 0
 
@@ -182,11 +168,6 @@ let g:js_fmt_auto_save = 1
 let g:js_fmt_command = "jsfmt"
 
 """"""""""""""""""""""""""""""""""""
-"Numbers
-""""""""""""""""""""""""""""""""""""
-let g:numbers_exclude = ['tagbar', 'vimshell', 'nerdtree', 'minibufexpl', 'conque']
-
-""""""""""""""""""""""""""""""""""""
 "ctrlsf, ag
 """"""""""""""""""""""""""""""""""""
 let g:ctrlsf_ackprg = 'ag'
@@ -202,14 +183,6 @@ nnoremap <C-X>o :CtrlSFOpen<CR>
 """"""""""""""""""""""""""""""""""""
 let g:slime_target = "tmux"
 let g:slime_default_config = {"socket_name":"default", "target_pane":"1"}
-
-""""""""""""""""""""""""""""""""""""
-"tabular
-""""""""""""""""""""""""""""""""""""
-" nmap <leader>a= :Tabularize /=<CR>
-" vmap <leader>a= :Tabularize /=<CR>
-" nmap <leader>a: :Tabularize /:\zs<CR>
-" vmap <leader>a: :Tabularize /:\zs<CR>
 
 """"""""""""""""""""""""""""""""""""
 "javascript-libraries-syntax
@@ -251,4 +224,4 @@ inoremap <F10> <ESC>:TableModeToggle<CR>
 """"""""""""""""""""""""""""""""""""
 vmap <Space> <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
-Bundle "tpope/vim-vinegar"
+
